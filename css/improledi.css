@@ -1,0 +1,336 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+	outline:none;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 16000px;
+	overflow: hidden;
+    -ms-zoom: 100%;
+    zoom: 100%;
+}
+
+a img {
+	border:0;
+	text-decoration: none;	
+	outline:none;
+}
+
+a:hover, a:visited, a:active {
+   border:0;
+   outline:none;
+}
+
+/*
+a:visited img{
+    text-decoration:none;
+    border:0;
+}
+
+a:hover img{
+    text-decoration:none;
+    border:0;
+}
+*/
+
+/*
+a link { border: 0px;}
+a visited { border: 0px;}
+a hover { border: 0px}
+
+*/
+
+@font-face {
+font-family: 'ProssimaData';
+src: url('../font/BureauAgencyFB.otf'); /* format('opentype');*/
+}
+
+@font-face{
+font-family:'ProssimaData';
+src: url('../font/BureauAgencyFB.eot');
+}
+
+@font-face{
+font-family:'ProssimaData';
+src: url('../font/BureauAgencyFB.ttf');
+}
+
+
+p {
+	line-height: 1.1em;
+}
+
+
+a {
+	text-decoration: none;	
+}
+
+h1 a, h2 a, h3 a, p a{
+
+	/*padding: 0 1px;*/
+	/*color: #6bc6c5;*/
+	text-decoration: none;	
+}
+
+
+h1, h2, h3, p {
+	margin-top: 0;
+}
+
+
+img {
+	border: 0px;
+	text-decoration: none;	
+	outline:none;
+	padding: 0px;
+}
+
+.container {
+	float: left;
+	display: block;
+	height: 1500px;
+	width: 2000px;
+	position: relative;
+	z-index:0 !important;
+}
+
+
+/*pagina principale*/
+
+#home {
+	background: #ff8330 url('../img/home-bg.fw.png') no-repeat top left;
+}
+
+#home .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+.dataspettacolo 
+{
+    font-family: ProssimaData;
+    text-decoration: none;
+    text-align:right;
+    font-weight:bold;
+    color:#fcd5b5; 
+    vertical-align:middle;
+    font-size:48px;
+    position: absolute;
+    width: 580px;
+    height: 60px;
+    top: 474px;
+    left: 357px;
+    padding: 0px;
+    margin: 0px;
+    /* background: #f79646;*/
+    }
+ 
+ div.dataspettacolo > a:link, a:visited, a:hover, a:active { color:#31859b; text-decoration: none; } /*#fcd5b5*/
+ 
+
+.news
+{
+	font-size:14px;
+	color:#ffffff; 
+	/*//font-family: ProssimaData; */
+	text-align:right;
+	position: absolute;
+	top: 14px;
+    left: 225px;
+    width:610px;
+    height:524px;
+    padding: 2px;
+    margin: 0px;
+    /*overflow:auto; */
+	/*border: 1px solid #aaaaaa; */
+	background-color: #000000;
+}
+
+ 
+ /*pagina chi siamo*/
+
+#chisiamo {
+	background: #31859b url('../img/chisiamo-bg.fw.png') no-repeat top left;
+}
+
+#chisiamo .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+#chisiamo .improlediani {
+position: absolute;
+width: 600px;
+height: 330px;
+top: 113px;
+left: 293px;
+padding: 0px;
+margin: 0px;
+/*border: 1px solid red;*/
+background: trasparent; /*ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+ /**/
+ 
+  /*pagina cosa facciamo*/
+
+#cosafacciamo {
+	background: #77933c url('../img/cosafacciamo-bg.fw.png') no-repeat top left;
+}
+
+#cosafacciamo .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+#cosafacciamo .spettacoli {
+position: absolute;
+width: 600px;
+height: 330px;
+top: 140px;
+left: 293px;
+padding: 0px;
+margin: 0px;
+border: 0;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+ /**/
+ 
+   /*pagina appuntamenti*/
+
+#appuntamenti {
+	background: #948a54 url('../img/appuntamenti-bg.fw.png') no-repeat top left;
+}
+
+#appuntamenti .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+#appuntamenti .date {
+position: absolute;
+width: 600px;
+height: 330px;
+top: 155px;
+left: 293px;
+padding: 0px;
+margin: 0px;
+border: 0;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+ /**/
+ 
+   /*pagina photogallery*/
+
+#photogallery {
+	background: #4b422a url('../img/photogallery-bg.fw.png') no-repeat top left;
+}
+
+#photogallery .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+#photogallery .galleriafoto {
+position: absolute;
+width: 580px;
+height: 350px;
+top: 140px;
+left: 293px;
+padding: 0px;
+margin: 0px;
+/* border: 1px solid red;*/
+/* background: #ffffff; /* url('../img/provamenu.gif') no-repeat left top;*/ 
+}
+
+
+ /**/
+ 
+ 
+    /*pagina contattaci*/
+
+#contattaci {
+	background: #660033 url('../img/contattaci-bg.fw.png') no-repeat top left;
+}
+
+#contattaci .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+#contattaci .contatti {
+position: absolute;
+width: 600px;
+height: 330px;
+top: 185px;
+left: 293px;
+padding: 0px;
+margin: 0px;
+border: 0;
+text-align:right;/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+
+ /**/
+ 
+  /*pagina ultimissime*/
+#ultimissime {
+	background: #f2f4f6 url('../img/ultimissime-bg.fw.png') no-repeat top left;
+}
+  
+#ultimissime .menu {
+position: absolute;
+width: 170px;
+height: 353px; /* 289px;*/
+top: 207px; /*240px*/
+left: 55px;
+padding: 0px;
+margin: 0px;
+/*background: #ff8330 url('../img/provamenu.gif') no-repeat left top;*/
+}
+  
+  
+  
