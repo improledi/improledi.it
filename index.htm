@@ -1,0 +1,1385 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="Arte, Sorriso, Improledi, Improledi', Improvvisazione, Teatro, Teatrale, Scio, Scio', Artedrama, Comicoterapia, Giocoleria, Musica, Mimo, Strada, Pianoforte, Sette, Improledì, Spattacolo, Piazza, Stadio, Pubblico, Comico, Comicita', Comicità, Suggerimenti" />
+    <title>Improledi - Improvvisazione teatrale</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/improledi.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/bx_styles.css" type="text/css" media="screen" />
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>	
+    <script type="text/javascript">
+        /* Code for carousel effect
+        */
+        (function ($) {
+            $(function () {
+                $('#carosellospettacoli').bxSlider({
+                    auto: true,
+                    autoControls: true
+                });
+
+                $('#carosellodate').bxSlider({
+                    auto: false,
+                    autoControls: false
+                });
+
+                $('#carosellofotografie').bxSlider({
+                    auto: true,
+                    autoControls: true
+                });
+
+                $('#caroselloimprolediani').bxSlider({
+                    auto: true,
+                    autoControls: true
+                });
+            });
+        } (jQuery))
+    </script>
+    <script type="text/javascript">
+        /* Code for horizontal sliding effect
+        see: http://tympanus.net/codrops/2010/06/02/smooth-vertical-or-horizontal-page-scrolling-with-jquery
+        */
+        (function ($) {
+            $(window).load(function () {
+
+                $(document).ready(function () {
+                    $("#Attendere").fadeOut()
+                });
+
+                $('div.menu a').bind('click', function (event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1100);
+                    event.preventDefault();
+                });
+
+                $('div.dataspettacolo a').bind('click', function (event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1100);
+                    event.preventDefault();
+                });
+
+                $('#prenotazioni').bind('click', function (event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1100);
+                    event.preventDefault();
+                });
+				
+				 $('#informazioni').bind('click', function (event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1100);
+                    event.preventDefault();
+                });
+            });
+        })(jQuery);	
+    </script>
+	<script>
+		(function($){
+			$(window).load(function(){
+				$(".news").mCustomScrollbar(
+				{
+					scrollButtons:{
+						enable:true
+					},
+					theme:"light-thick"
+				}
+				);
+			});
+		})(jQuery);
+	</script>
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+    <div style="width: 2000px; height: 1500px; background-color: #ffffff" id="Attendere">
+        <img style="position: absolute; top: 100px; left: 5%;" src="img/wait.gif" alt="Improledi'" />
+        <br />
+        <span style="position: absolute; font-size: 40px; color: #ff8330; left: 5%;">Benvenuti
+            !<br />
+            <span style="font-size: 12px;">Caricamento in corso...</span></span>
+    </div>
+    <div id="home" class="container">
+        <div class="menu">
+            <a href="#chisiamo" title="chi siamo: gli improlediani">
+                <img src="img/chisiamo.fw.png" alt="chi siamo" /></a> <a href="#cosafacciamo" title="cosa facciamo: i nostri format">
+                    <img src="img/cosafacciamo.fw.png" alt="cosa facciamo" /></a> <a href="#appuntamenti"
+                        title="appuntamenti: i prossimi spettacoli">
+                        <img src="img/appuntamenti.fw.png" alt="appuntamenti" /></a> <a href="#photogallery"
+                            title="photogallery">
+                            <img src="img/photogallery.fw.png" alt="photogallery" /></a> <a href="#contattaci"
+                                title="contattaci">
+                                <img src="img/contattaci.fw.png" alt="contattaci" /></a>
+								<a href="#ultimissime" 
+                                title="ultimissime">
+                                <img src="img/ultimissime.fw.png" alt="ultimissime"/></a>
+        </div>
+        <div class="dataspettacolo">
+            <a href="#appuntamenti" title="il prossimo spettacolo">25-11-2017: Piacere Improledi'</a>
+        </div>
+		<!--
+		<div class="ultimissime">
+			<span style="color: #ff8330;">23 Marzo 2014</span><br/>
+			Improledi' vince il PRIMO premio della giuria giovani alla Giornata Mondiale del Teatro, Volvera (TO)<br/><br/>
+			
+			<span style="color: #ff8330;">Biglietti gratis per il 29 Marzo 2014: il concorso !</span><br/>
+			Che il nostro prossimo spettacolo sara' sabato 29 marzo 2014, ormai lo sapete.<br/>
+			Non sapete, pero', che alcuni improlediani hanno partecipato alle riprese di una pubblicità 'progresso' che va da poco in onda su dfferenti media (e in giro sui cartelloni).<br/>
+			Bene, ecco partito il nostro concorso, che vi premiera' con 2 biglietti per lo spettacolo dei nostri primi 10 anni: chi individuera' per primo gli 
+			improlediani nello spot sara' il vincitore o vincitrice!<br/>
+			Dovrete solo guardare la pubblicita' e scriverci chi e in quale secondo appare.<br>
+			<b>Per il premio farà fede la risposta corretta, la data e l'ora della risposta che compare nel post su <br/><a style="color: #ff8330;" target="_blank" href="https://it-it.facebook.com/gruppo.improledi/">Facebook</a>.</b><br>
+			Coraggio. Pronti, partenza e... via!<br>
+			Buona visione!<br>
+			<a style="color: #ff8330;" target="_blank" href="http://www.youtube.com/watch?v=V66NoMVqtLI/">Qui</a> lo spot che trovate anche sul sito della campagna virale
+			<a style="color: #ff8330;" target="_blank" href="http://www.sceglimeglio.com/">www.sceglimeglio.com</a>
+			
+			<br><br>
+			
+		</div>
+		-->
+    </div>
+    <div id="chisiamo" class="container">
+        <div class="menu">
+            <a href="#home" title="torna alla pagina principale">
+                <img src="img/home.fw.png" alt="home" /></a> <a href="#cosafacciamo" title="cosa facciamo: i nostri format">
+                    <img src="img/cosafacciamo2.fw.png" alt="cosa facciamo" /></a> <a href="#appuntamenti"
+                        title="appuntamenti: i prossimi spettacoli">
+                        <img src="img/appuntamenti.fw.png" alt="appuntamenti" /></a> <a href="#photogallery"
+                            title="photogallery">
+                            <img src="img/photogallery.fw.png" alt="photogallery" /></a> <a href="#contattaci"
+                                title="contattaci">
+                                <img src="img/contattaci.fw.png" alt="contattaci" /></a>
+								<a href="#ultimissime" 
+                                title="ultimissime">
+                                <img src="img/ultimissime.fw.png" alt="ultimissime" /></a>
+        </div>
+        <div class="improlediani">
+            <div id="caroselloimprolediani">
+                <!-- La genesi -->
+                <div>
+                    <span style="color: #ff8330; font-size: 40px; font-weight: bold;">La genesi</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; font-size: 14px;">Improledi' nasce agli albori del 2004
+                        da un gruppo di amici, conosciutosi all'interno di una scuola di improvvisazione
+                        teatrale di Torino.
+                        <br />
+                        Le persone che vi prendono parte hanno alle spalle percorsi artistici diversi, scuole
+                        di teatro, musica, canto, maturati nel tempo attraverso stage e corsi di approfondimento
+                        in varie discipline artistiche come Comicoterapia, Prestidigitazione, Clownerie,
+                        Giocoleria, Scrittura Comica, Mimo e Pantomima, nonche' la classica animazione per
+                        bambini ed adulti.
+                        <br />
+                        Il tutto con il comune denominatore dell'improvvisazione teatrale.
+                        <br />
+                        Questa pluralita' di esperienze ha creato le premesse per sperimentare insieme inizialmente
+                        momenti di animazione pura ed in seguito allestire spettacoli, fondendo aspetti
+                        classici del teatro recitato e musicato ad elementi di improvvisazione con il coinvolgimento
+                        del pubblico, per ottenere cosi' format adattabili a molteplici occasioni e sempre
+                        diversi.
+                        <br />
+                        Improledi' e' oggi un'associazione culturale sanza scopo di lucro.
+                        <br />
+                        Nostra protettrice, nonche' musa ispiratrice, e' Improledi', la mucca mascotte e
+                        "marchio di fabbrica". </span>
+                </div>
+                <!-- -->
+                <!-- Giorgio -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Giorgio 'GIJOE' Caleca</span>
+                    <span style="color: #888888; text-align: right; font-size: 12px;">
+                        <br />
+                        E' uno dei cervelli fuggiti all'estero: l'unico ad aver lasciato il corpo a casa
+                        percio' se avete bisogno di un aiuto, lui c'e'. Regista sapiente, moderatore, autentica
+                        colonna portante del gruppo. E' una piccola enciclopedia della comicità, dalla battuta
+                        pronta e dalle lunghe vedute. </span>
+                    <div>
+                        <img src="img/improlediani/giorgio.png" alt="Giorgio 'GIJOE' Caleca" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+                <!-- Roy -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Rosario 'Roy' Verni'</span>
+                    <span style="color: #888888; text-align: right; font-size: 12px;">
+                        <br />
+                        L'unico che prendeva le note... fin dall'asilo nido. E' un comico che si diletta
+                        di musica e per quest'ultima finisce letteralmente in trance: si dice che la sua
+                        prima parola sia stata 'pianoforte'. A suo modo un genio, stralunato ma sempre generoso
+                        e disponibile e che ama divertire. </span>
+                    <div>
+                        <img src="img/improlediani/roy.png" alt="Rosario 'Roy' Verni'" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+                <!-- Santo -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Alessandro 'SantoSubito'
+                        Leo</span> <span style="color: #888888; text-align: right; font-size: 12px;">
+                            <br />
+                            E' molto richiesto da pittori e scultori di soggetti sacri a causa di una certa
+                            somiglianza che sembra garantirgli conoscenze 'molto in alto': per questo le moltiplicazioni
+                            sono il suo forte e non con la calcolatrice. Grande sommellier foltocrinito e cinghiale
+                            benemerito. Quando il destino gli si accanisce contro mettendolo in croce (a suo
+                            dire), alza sempre gli occhi al cielo e si affida... alla sua insospettabile allegria.
+                        </span>
+                    <div>
+                        <img src="img/improlediani/santo.png" alt="Alessandro 'SantoSubito' Leo" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+                <!-- Michelone -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Michele '3D' Gentile</span>
+                    <span style="color: #888888; text-align: right; font-size: 12px;">
+                        <br />
+                        Ha il piu' alto contenuto di testosterone del gruppo. Da quando ha cominciato a
+                        perdere i capelli, e' iniziato il suo calvario. Assolutamente da contattare quando
+                        serve concentrare energie positive: e' un vero 'guru'. Gentile di nome e di fatto
+                        e' un inarrestabile ariete della comicita'. </span>
+                    <div>
+                        <img src="img/improlediani/3d.png" alt="Michele '3D' Gentile" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+                <!-- Toro -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Andrea 'Toroselvaggio'
+                        Poggi</span> <span style="color: #888888; text-align: right; font-size: 12px;">
+                            <br />
+                            Ama la Spagna ma non la corrida. Chiunque calci un pallone di lui si fida. Anima
+                            scaltra e giramondo amante della buona cucina e del buon vino. Il piu' giovane del
+                            gruppo, goliardico e sempre pronto al dialogo. Una cosa e' certa: difficile annoiarsi
+                            con un tipo come lui. </span>
+                    <div>
+                        <img src="img/improlediani/toro.png" alt="Andrea 'Toro' Poggi" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+                <!-- Magro -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Andrea 'Magrino' Fadde</span>
+                    <span style="color: #888888; text-align: right; font-size: 12px;">
+                        <br />
+                        Il piu' giovane ultratrentenne di Torino e dintorni. I suoi genitori vivono ancora
+                        con lui. Ama i bambini e le ragazze e con le seconde vorrebbe aumentare il numero
+                        dei primi. E' un maestro elementare molto amato: soprattutto perche' e' difficile
+                        distinguerlo dai suoi allievi. Il suo credo ? Amore: sempre, comunque, ovunque.
+                    </span>
+                    <div>
+                        <img src="img/improlediani/magro.png" alt="Andrea 'Magrino' Fadde" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+                <!-- Raffo -->
+                <div style="vertical-align: middle; text-align: center">
+                    <span style="color: #ff8330; font-size: 20px; font-weight: bold;">Raffaele 'Raffo' Iemma</span>
+                    <span style="color: #888888; text-align: right; font-size: 12px;">
+                        <br />
+                        L'art attack della sensualita'. La risposta italiana a Brad Pitt. Non è infrequente
+                        vederlo esibirsi in qualche locale di cabaret: con la sua esuberante energia entra
+                        subito in contatto col pubblico, soprattutto femminile.</span>
+                    <div>
+                        <img src="img/improlediani/raffo.png" alt="Raffaele 'Raffo' Iemma" style="padding-top: 10px" />
+                    </div>
+                    <span style="color: #888888; text-align: right;"></span>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+    </div>
+    <div id="cosafacciamo" class="container">
+        <div class="menu">
+            <a href="#chisiamo" title="chi siamo: gli improlediani">
+                <img src="img/chisiamo2.fw.png" alt="chi siamo" /></a> <a href="#home" title="torna alla pagina principale">
+                    <img src="img/home2.fw.png" alt="home" /></a> <a href="#appuntamenti" title="appuntamenti: i prossimi spettacoli">
+                        <img src="img/appuntamenti2.fw.png" alt="appuntamenti" /></a> <a href="#photogallery"
+                            title="photogallery">
+                            <img src="img/photogallery.fw.png" alt="photogallery" /></a> <a href="#contattaci"
+                                title="contattaci">
+                                <img src="img/contattaci.fw.png" alt="contattaci" /></a>
+								<a href="#ultimissime" 
+                                title="ultimissime">
+                                <img src="img/ultimissime.fw.png" alt="ultimissime" /></a>
+        </div>
+        <div class="spettacoli">
+            <div id="carosellospettacoli">
+                <!-- I NOSTRI FORMAT -->
+                <div style="text-align: justify;">
+                    <span style="color: #ff8330; font-weight: bold; font-size: 34px">I nostri format</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">Possiamo orgogliosamente affermare
+                        che nel nostro repertorio, non esistono, anche se con lo stesso titolo, due spettacoli
+                        uguali: le nostre rappresentazioni prevedono infatti la partecipazione attiva del
+                        pubblico con suggerimenti volti a caratterizzare scene e personaggi in una sorta
+                        di gioco-sfida in grado di dare vita a situazioni grottesche, ironiche o tragicomiche
+                        rigorosamente improvvisate, frutto della nostra creativita' stimolata dal coinvolgimento
+                        degli spettatori e dalla presenza della nostra musica dal vivo.
+                        <br />
+                        Dopo diversi anni di esperienza, che ci hanno portato ad esibirci nelle situazioni
+                        più diverse, dai palcoscenici teatrali alle piazze, dai parchi acquatici agli stadi
+                        abbiamo deciso di raccogliere e strutturare i nostri schetch dotandoli di un filo
+                        conduttore, di una struttura che ci consente di proporli come format ad ogni tipo
+                        di pubblico.
+                        <br />
+                        Il risultato e' sempre qualcosa di diverso, fresco e godibile che ci prendiamo cura
+                        di far crescere e sviluppare in nuove e sorprendenti forme.
+                        <br />
+                        Il complimento piu' bello che ci viene fatto da chi ci ha visto all'opera ?
+                        <br />
+                        <b>"Su, siate sinceri, e' tutto preparato... Di improvvisato non c'e' nulla !"</b>.
+                    </span>
+                </div>
+                <!-- -->
+                <!--IMPROLEDISCIO' -->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">Improledi' Scio'</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">Sette artisti serviranno al pubblico
+                        una serata dal “sapore” davvero speciale.<br />
+                        Un singolare Maestro Cerimoniere guidera' gli spettatori attraverso i molteplici
+                        gusti del divertimento in un susseguirsi di portate ad alto contenuto emotivo.
+                        <br />
+                        Tra specialita' zodiacali, ricette misteriose e incursioni nelle tradizioni popolari
+                        ogni spettatore potra' apprezzare l’arte del servire sorriso in abbondanza.
+                        <br />
+                        La freschezza dell’improvvisazione, proposta in piatti di stuzzicante allegria,
+                        fa di questo evento un appuntamento davvero unico proposto in una cornice squisitamente
+                        teatrale. </span>
+                </div>
+                <!-- -->
+                <!-- PIACERE IMPROLEDI'-->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">Piacere !... Improledi'</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">Cosa succede quando due presentatori
+                        si contendono l’onore di condurre uno spettacolo ?
+                        <br />
+                        Avremo una sana collaborazione o una spietata rivalità ?
+                        <br />
+                        Chi la spuntera' ?
+                        <br />
+                        Tra gag, colpi bassi ed improvvisazioni viene innescata una sequenza di situazioni
+                        esilaranti sempre ispirate dai suggerimenti proposti dal pubblico.
+                        <br />
+                        Per la sua forte componente di animazione questo format e' proposto sia in spazi
+                        raccolti come locali, pub e saloni sia in luoghi ampi come parchi e piazze.
+                    </span>
+                </div>
+                <!-- -->
+                <!--LUCIDANDRONE -->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">Lucidandrone</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">L’ordinaria quotidianita' di un condominio
+                        si trasforma, attraverso gli occhi di un portinaio sognatore e visionario, in una
+                        sequenza di schetch ognuno dei quali innescato da un normale episodio di vita quotidiana
+                        o particolarita' di ciascuno dei sei strampalati e singolari condomini che ne diventa
+                        il protagonista.
+                        <br />
+                        Il pubblico assistera' alla rappresentazione di queste visioni fatte di esibizioni
+                        canore e musicali, cabaret, improbabili investigazioni "in giallo" ed altro ancora
+                        che metteranno a nudo pregi, difetti e segreti dei sei personaggi: e proprio il
+                        pubblico con i suoi suggerimenti diventera' partecipe delle loro glorie o sfortune.
+                        <br />
+                        Il condominio prende vita in una cornice decisamente teatrale.
+                        <br />
+                        <br />
+                        <a style="color: #77933c; font-weight: bold; font-size: 14px" href="http://youtu.be/7y5FhAXgdKg">
+                            Guarda il video !</a> </span>
+                </div>
+                <!-- -->
+                <!--INGIALLITO -->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">Ingiallito</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">L’ispettore Marcus Wittingale, della
+                        Contea di Workshire, è ormai in pensione.
+                        <br />
+                        Chiuso nel suo studio, ripensa con nostalgia ai suoi vecchi casi.
+                        <br />
+                        Saranno questi ricordi, insieme ai suggerimenti del pubblico, a dar vita ad uno
+                        spettacolo d’improvvisazione volto a dipanare la trama di un giallo tutto da ridere.
+                        <br />
+                        La Contea di Workshire vive in una cornice decisamente teatrale. </span>
+                </div>
+                <!-- -->
+                <!--ANTOLOGIA IMPROLEDI' -->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">Antologia Improledi'</span><span
+                        style="color: #77933c; font-weight: bold; font-size: 24px">(Ma quante storie !)</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">Mille e uno modi per raccontare una
+                        storia.
+                        <br />
+                        <br />
+                        Lo spettacolo e' un’antologia di storie totalmente improvvisate grazie ai suggerimenti
+                        del pubblico: storie molto brevi e storie più lunghe, storie illustrate, musicali,
+                        fiabe e gialli, ad incastro, nel futuro, nel passato…
+                        <br />
+                        Storie per tutti i gusti, improvvisate con approccio umoristico e graffiante.
+                        <br />
+                        Un’intera serata di storie che alla fine fara' esclamare al pubblico in teatro:
+                        “Ma quante storie !”. </span>
+                </div>
+                <!-- -->
+                <!--GRAZIE A VOI -->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">Grazie a voi</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">Uno spettacolo interamente dedicato
+                        ad Improledì ed al suo pubblico.
+                        <br />
+                        In una sorta di conferenza stampa Improledi' ripercorre in teatro, in mezzo al proprio
+                        pubblico, i momenti piu' significativi ed i retroscena creativi dei propri spettacoli:
+                        una sorta di "dietro le quinte" cui partecipano i personaggi piu' caratteristici
+                        messi in scena ai quali verra' affidato il compito di guidare il pubblico alla scoperta
+                        dello spettacolo di cui ciascuno di loro e' stato protagonista, svelandone in chiave
+                        comica tutti gli aspetti, dal piu' conosciuto al piu' nascosto.
+                        <br />
+                        Una buona occasione, per il pubblico che ci conosce e per quello nuovo di partecipare
+                        in prima persona "guidando" l'improvvisazione e mettendoci, simbolicamente, a nudo
+                        ! </span>
+                </div>
+                <!-- -->
+				 <!--C'ERA UNA STORIA -->
+                <div style="text-align: justify;">
+                    <span style="color: #77933c; font-weight: bold; font-size: 34px">C'era una storia</span>
+                    <br />
+                    <br />
+                    <span style="color: #888888; text-align: right;">Quanto vale il nostro tempo?
+                        <br />
+						Cosa succede quando una persona molto impegnata e sempre pronta a pianificare progetti per il suo futuro deve forzatamente fermarsi? 
+						Bisogna semplicemente considerare questa situazione come una sventura oppure puo' rivelarsi un'occasione da non perdere? 
+						Di fronte a questi interrogativi si trovera' suo malgrado il protagonista di questo spettacolo e per trovare le risposte dovra'
+						mettersi in discussione seriamente. In questo percorso pero' non sara' solo ma in compagnia di alcune... Misteriose presenze.
+                        <br />
+					</span>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+    </div>
+    <div id="appuntamenti" class="container">
+        <div class="menu">
+            <a href="#chisiamo" title="chi siamo: gli improlediani">
+                <img src="img/chisiamo.fw.png" alt="chi siamo" /></a> <a href="#cosafacciamo" title="cosa facciamo: i nostri format">
+                    <img src="img/cosafacciamo3.fw.png" alt="cosa facciamo" /></a> <a href="#home" title="torna alla pagina principale">
+                        <img src="img/home3.fw.png" alt="home" /></a> <a href="#photogallery" title="photogallery">
+                            <img src="img/photogallery2.fw.png" alt="photogallery" /></a> <a href="#contattaci"
+                                title="contattaci">
+                                <img src="img/contattaci.fw.png" alt="contattaci" /></a>
+								<a href="#ultimissime" 
+                                title="ultimissime">
+                                <img src="img/ultimissime.fw.png" alt="ultimissime" /></a>
+        </div>
+        <div class="date">
+            <div id="carosellodate">
+			 <!-- -->
+			                 <!-- 25-11-2017 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        25-11-2017</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/antologia.fw.png" alt="Antologia Improledi'" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Improledi'
+                        <br />
+						<br />
+						torna a calcare 
+						<br/>
+						il palcoscenico del teatro 
+						<br />
+						L'Espace
+                        <br />
+                        presentando un classico
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Antologia
+                            Improledi' (ma quante storie)</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino </span> <br/>
+						<a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a> 
+						<br/> <a style="color: #ff8330;font-size: 10px;" target="_blank" href="https://www.facebook.com/events/1943160299267939/">Informazioni
+						<br/> <a style="color: #ff8330;font-size: 10px;" target="_blank" href="https://www.facebook.com/teatroespace/">Sala L'Espace</a>
+						
+				</div>
+                <!-- -->
+			 			 			  <!-- 17-06-2017 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        17-06-2017</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/garagevian_small.jpg" alt="Piacere Improledi'" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Il luogo a Torino dove 
+                        <br />
+                        teatro arte e musica 
+                        <br />
+                        si accompagnano a buon cibo:
+						<br />
+						nella suggestiva cornice del Garage Vian
+                        <br />
+						Improledi'
+						<br />
+                        presenta
+                        <br />												
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Piacere Improledi'</span>
+                        <br />
+                        <br />
+                        Ore 21.00 
+                        <br />
+                        Associazione Culturale
+						  <br />
+						Garage Vian
+                        <br />
+                        Via Castelnuovo 10A (TO)
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <a style="color: #ff8330;font-size: 10px;" target="_blank" href="http://www.garagevian.it">Garage Vian</a>
+						 <!-- <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a> -->
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->			 
+			 <!-- -->
+	
+			 			  <!-- 28-02-2016 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        28-02-2016</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/patchocco_small.jpg" alt="C'era una storia" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna PATCHOCCO
+                        <br />
+                        <br />
+                        La storia di un uomo comune, 
+                        <br />
+                        della sua vita quotidiana
+						<br />
+						che un piccolo imprevisto,
+                        <br />
+						trasformera',
+						<br />
+                        in una parabola
+                        <br />						
+						dall'esito incredibile.
+                        <br />
+						<br />						
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">C'era una storia</span>
+                        <br />
+                        <br />
+                        Ore 17.00 Centro Giovanile
+                        <br />
+                        Centro Giovanile
+						Piazza Caselli 19
+                        <br />
+                        Chieri (TO)
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <a style="color: #ff8330;font-size: 10px;" target="_blank" href="http://www.comune.chieri.to.it/eventi/patchocco-febbraio">Link alla rassegna</a>
+						 <!-- <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a> -->
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->			 
+			 <!-- -->
+			 
+			 			  <!-- 25-02-2016 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        25-02-2016</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/locandina_san_mauro_small.jpg" alt="C'era una storia" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        A grande richiesta.
+                        <br />
+                        <br />
+                        La storia di un uomo comune, 
+                        <br />
+                        della sua vita quotidiana
+						<br />
+						che un piccolo imprevisto,
+                        <br />
+						trasformera',
+						<br />
+                        in una parabola
+                        <br />						
+						dall'esito incredibile.
+                        <br />
+						<br />						
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">C'era una storia</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro Gobetti
+                        <br />
+                        Via Martiri della Liberta' 17
+                        <br />
+                        San Mauro Torinese (TO)
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <!-- <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a>-->
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+			 
+			  <!-- 10-01-2016 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        10-01-2016</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/cera_una_storia_10_gennaio_small.jpg" alt="C'era una storia" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        A grande richiesta.
+                        <br />
+                        <br />
+                        La storia di un uomo comune, 
+                        <br />
+                        della sua vita quotidiana
+						<br />
+						che un piccolo imprevisto,
+                        <br />
+						trasformera',
+						<br />
+                        in una parabola
+                        <br />						
+						dall'esito incredibile.
+                        <br />
+						<br />						
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">C'era una storia</span>
+                        <br />
+                        <br />
+                        Ore 16.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <!-- <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a>-->
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+			 
+			 			 <!-- 23-05-2015 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        23-05-2015</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/cera_una_storia_23_maggio_small.jpg" alt="C'era una storia" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        A grande richiesta.
+                        <br />
+                        <br />
+                        La storia di un uomo comune, 
+                        <br />
+                        della sua vita quotidiana
+						<br />
+						che un piccolo imprevisto,
+                        <br />
+						trasformera',
+						<br />
+                        in una parabola
+                        <br />						
+						dall'esito incredibile.
+                        <br />
+						<br />						
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">C'era una storia</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro Blu
+                        <br />
+                        Piazza Roma
+                        <br />
+                        Buriasco (Torino)
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <!-- <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a>-->
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+			 
+			 
+			 <!-- 11-04-2015 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        11-04-2015</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/cera_una_storia_11_aprile_small.jpg" alt="C'era una storia" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nuovamente dopo il grande successo...
+                        <br />
+                        <br />
+                        La storia di un uomo comune, 
+                        <br />
+                        della sua vita quotidiana
+						<br />
+						che un piccolo imprevisto,
+                        <br />
+						trasformera',
+						<br />
+                        in una parabola
+                        <br />						
+						dall'esito incredibile.
+                        <br />
+						<br />						
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">C'era una storia</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a>
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+			 
+			    <!-- 13-12-2014 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        13-12-2014</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/Locandina_13_dicembre_2015_small.jpg" alt="C'era una storia" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Un evento tutto nuovo.
+                        <br />
+                        <br />
+                        La storia di un uomo comune, 
+                        <br />
+                        della sua vita quotidiana
+						<br />
+						che un piccolo imprevisto,
+                        <br />
+						trasformera',
+						<br />
+                        in una parabola
+                        <br />						
+						dall'esito incredibile.
+                        <br />
+						<br />						
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">C'era una storia</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Prenotazioni</a><br/>
+						 <a id="informazioni" style="color: #ff8330;font-size: 10px;" href="#ultimissime">Informazioni e Biglietti</a>
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+									                <!-- 26-10-2014 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        26-10-2014</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/salottodimao_locandina_per_sito.jpg" alt="Improledi' Scio'" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Ospite d'eccezione a 
+                        <br />
+                        <br />
+                        <span style="color: #333333">Il salotto di Mao</span>
+                        <br />
+                        <br />
+                        Improledi' presenta 
+                        <br />
+						la performance d'improvvisazione 
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">The performance</span>
+                        <br />
+                        <br />
+						<br />
+                        Ore 19.30
+						<br />						
+						LAB 
+						<br />
+                        Piazza Vittorio Emanuele 16/E
+                        <br />
+                        Torino </span>
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+						                <!-- 25-05-2014 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        25-05-2014</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/giovaniinscena2014mini.jpg" alt="Improledi' Scio'" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna
+                        <br />
+                        <br />
+                        <span style="color: #333333">GIOVANI IN SCENA 2014</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Improledi' Scio'</span>
+                        <br />
+						INGRESSO GRATUITO
+                        <br />
+						<br />
+                        Ore 21
+						<br />						
+						Centro 'Isola che non c'è'
+						<br />
+                        Via Rubino 24
+                        <br />
+                        Torino </span>
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+			                <!-- 29-03-2014 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        29-03-2014</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/locandinadecennalepermarzomini.jpg" alt="Correva l'anno 2003" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Preparatevi.
+                        <br />
+                        In occasione dei 10 anni di attivita'
+                        <br />
+                        <span style="">Improledi' ha deciso</span>
+                        <br />
+                        di regalarvi 
+                        <br />
+                        un evento unico, 
+                        <br />
+                        inedito,
+                        <br />
+                        straordinario.
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Correva l'anno 2003</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a><br/>
+						 <a style="color: #ff8330;font-size: 10px;" target="_blank" href="http://www.youtube.com/watch?v=o6aXCpBPlyg&list=UUKdkL4XQHQmk_Gv4sruMRDA">Video promozionale</a>
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+                <!-- 14-12-2013 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        14-12-2013</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/locandinadecennale.png" alt="Correva l'anno 2003" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Preparatevi.
+                        <br />
+                        In occasione dei 10 anni di attivita'
+                        <br />
+                        <span style="">Improledi' sta alacremente lavorando</span>
+                        <br />
+                        per regalarvi 
+                        <br />
+                        un evento unico, 
+                        <br />
+                        inedito,
+                        <br />
+                        straordinario.
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Correva l'anno 2003</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino
+                        <br />
+                        <br />
+                         <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a>
+                        <!-- <a id="A1" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a> -->
+                    </span>
+                </div>
+                <!-- -->
+                <!-- 16-6-2013 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        16-6-2013</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/locandinaimprolediscioreload16giugno.jpg" alt="ImprolediScio' Reload" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Orgogliosi ospiti del
+                        <br />
+                        <br />
+                        <span style="color: #000000">Centro Pastorale di San Sebastiano da Po</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Improledi' Scio'</span>
+                        <br />
+                        <br />
+                        Ore 21.00
+                        <br />
+                        Via Chivasso 44
+                        <br />
+                        San Sebastiano da Po (Torino)
+                        <br />
+                        <br />
+                        <a id="prenotazioni" style="font-size: 10px;" href="#contattaci">Informazioni e prenotazioni</a>
+                    </span>
+                </div>
+                <!-- -->
+                <!-- 18-5-2013 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        18-5-2013</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/grazieavoi.fw.png" alt="Grazie a voi" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna
+                        <br />
+                        <br />
+                        <span style="color: #000000">Rassegna...tevi, e' tornato Improledi' !</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Grazie a voi</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino
+                        <br />
+                        <br />
+                    </span>
+                </div>
+                <!-- -->
+                <!-- 6-4-2013 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        6-4-2013</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/antologia.fw.png" alt="Antologia Improledi'" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna
+                        <br />
+                        <br />
+                        <span style="color: #000000">Rassegna...tevi, e' tornato Improledi' !</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Antologia
+                            Improledi' (ma quante storie)</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino </span>
+                </div>
+                <!-- -->
+                <!-- 16-2-2013 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        16-2-2013</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/lucidandrone.fw.png" alt="Lucidandrone" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna
+                        <br />
+                        <br />
+                        <span style="color: #000000">Rassegna...tevi, e' tornato Improledi' !</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Lucidandrone</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino </span>
+                </div>
+                <!-- -->
+                <!-- 16-2-2013 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        15-12-2012</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/ingiallito.fw.png" alt="Ingiallito" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna
+                        <br />
+                        <br />
+                        <span style="color: #000000">Rassegna...tevi, e' tornato Improledi' !</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Ingiallito</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino </span>
+                </div>
+                <!-- -->
+                <!-- 10-11-2012 -->
+                <div>
+                    <span style="color: #31859b; font-family: ProssimaData; font-size: 40px; font-weight: bold;">
+                        10-11-2012</span>
+                    <div style="float: left; vertical-align: middle; padding: 42px;">
+                        <img src="img/spettacoli/improlediscio.fw.png" alt="ImprolediScio" />
+                    </div>
+                    <span style="color: #888888; text-align: right;">
+                        <br />
+                        <br />
+                        Nell'ambito della rassegna
+                        <br />
+                        <br />
+                        <span style="color: #000000">Rassegna...tevi, e' tornato Improledi' !</span>
+                        <br />
+                        <br />
+                        Improledi' presenta:
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color: #31859b; font-family: ProssimaData; font-size: 26px;">Improledi' Scio'</span>
+                        <br />
+                        <br />
+                        Ore 21.00 Teatro L'Espace
+                        <br />
+                        Via Mantova 38
+                        <br />
+                        Torino </span>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+    </div>
+    <div id="photogallery" class="container">
+        <div class="menu">
+            <a href="#chisiamo" title="chi siamo: gli improlediani">
+                <img src="img/chisiamo.fw.png" alt="chi siamo" /></a> <a href="#cosafacciamo" title="cosa facciamo: i nostri format">
+                    <img src="img/cosafacciamo.fw.png" alt="cosa facciamo" /></a> <a href="#appuntamenti"
+                        title="appuntamenti: i prossimi spettacoli">
+                        <img src="img/appuntamenti3.fw.png" alt="appuntamenti" /></a> <a href="#home" title="torna alla pagina principale">
+                            <img src="img/home4.fw.png" alt="home" /></a> <a href="#contattaci" title="contattaci">
+                                <img src="img/contattaci2.fw.png" alt="contattaci" /></a>
+								<a href="#ultimissime" 
+                                title="ultimissime">
+                                <img src="img/ultimissime.fw.png" alt="ultimissime" /></a>
+        </div>
+        <div class="galleriafoto">
+            <div id="carosellofotografie">
+                <div>
+                    <img src="img/photogallery/1.jpg" alt="" /><br />
+                    <span style="font-size: 10px">Visone (Acqui Terme), Luglio 2009 (foto: Ilaria Caprifoglio)</span></div>
+                <div>
+                    <img src="img/photogallery/2.jpg" alt="" /><br />
+                    <span style="font-size: 10px">Visone (Acqui Terme), Luglio 2009 (foto: Ilaria Caprifoglio)</span></div>
+                <div>
+                    <img src="img/photogallery/3.jpg" alt="" /><br />
+                    <span style="font-size: 10px">Torino, Novembre 2007 (foto: Alex Berto)</span></div>
+                <div>
+                    <img src="img/photogallery/4.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Improledi' Scio'</i>, Novembre 2009 (foto: Silvia
+                        Trisolino)</span></div>
+                <div>
+                    <img src="img/photogallery/5.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Lucidandrone</i>, Novembre 2010 (foto: Silvia Trisolino)</span></div>
+                <div>
+                    <img src="img/photogallery/6.jpg" alt="" /><br />
+                    <span style="font-size: 10px">Acqui Terme, Luglio 2010 (foto: Improledi')</span></div>
+                <div>
+                    <img src="img/photogallery/7.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Improledi' Scio'</i>, Novembre 2009 (foto: Rossella
+                        Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/8.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Lucidandrone</i>, Novembre 2010 (foto: Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/9.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Lucidandrone</i>, Novembre 2010 (foto: Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/10.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Lucidandrone</i>, Novembre 2010 (foto: Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/11.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Antologia Improledi' (Ma quante storie !)</i>, Novembre
+                        2011 (foto: Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/12.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Piacere Improledi'</i>, Febbraio 2010 (foto: Rossella
+                        Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/13.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Improledi' Scio' - Radioattivita'</i>, Marzo 2010 (foto:
+                        Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/14.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Improledi' Scio' - Radioattivita'</i>, Marzo 2010 (foto:
+                        Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/15.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Antologia Improledi' (Ma quante storie !)</i>, Aprile
+                        2013 (foto: Rossella Fava)</span></div>
+                <div>
+                    <img src="img/photogallery/16.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Piacere Improledi'</i>, Maggio 2010 (foto: Improledi')</span></div>
+                <div>
+                    <img src="img/photogallery/17.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Piacere Improledi'</i>, Acqui Terme, Febbraio 2011 (foto: Improledi')</span></div>
+                <div>
+                    <img src="img/photogallery/18.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Variarte</i>, Pinerolo, Gennaio 2012 (foto: Improledi')</span></div>
+                <div>
+                    <img src="img/photogallery/19.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>Grazie a voi</i>, Maggio 2013 (foto: Improledi')</span></div>
+				<div>
+                    <img src="img/photogallery/20.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>C'era una storia</i>, Marzo 2016 (foto: Jessica Pasqualon)</span></div>
+				<div>
+                    <img src="img/photogallery/21.jpg" alt="" /><br />
+                    <span style="font-size: 10px"><i>C'era una storia</i>, Febbraio 2016, Chieri (TO) (foto: Elisa Olivero)</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="contattaci" class="container">
+        <div class="menu">
+            <a href="#chisiamo" title="chi siamo: gli improlediani">
+                <img src="img/chisiamo.fw.png" alt="chi siamo" /></a> <a href="#cosafacciamo" title="cosa facciamo: i nostri format">
+                    <img src="img/cosafacciamo.fw.png" alt="cosa facciamo" /></a> <a href="#appuntamenti"
+                        title="appuntamenti: i prossimi spettacoli">
+                        <img src="img/appuntamenti.fw.png" alt="appuntamenti" /></a> <a href="#photogallery"
+                            title="photogallery">
+                            <img src="img/photogallery3.fw.png" alt="photogallery" /></a> <a href="#home" title="torna alla pagina principale">
+                                <img src="img/home5.fw.png" alt="home" /></a>
+								<a href="#ultimissime" 
+                                title="ultimissime">
+                                <img src="img/ultimissime.fw.png" alt="ultimissime" /></a>
+        </div>
+        <div class="contatti">
+            <span style="color: #ffffff; font-size: 20px; font-weight: bold;">Presidente Associazione
+                Culturale Improledi'<br />
+                <a style="color: #ff8330;" href="mailto:ale.greyhawk@gmail.com">Andrea Fadde </a>
+                <br />
+                <br />
+                vice presidente
+                <br />
+                <a style="color: #ff8330;" href="mailto:gentile.michele1@email.it">Giorgio Caleca
+                </a>
+                <br />
+                <br />
+                Informazioni e prenotazioni biglietti: <a style="color: #ff8330;" href="mailto:andreafadde@yahoo.it">
+                    Andrea Fadde </a>
+                <br />oppure sul nostro profilo  
+				<a style="color: #ff8330;" target="_blank" href="https://it-it.facebook.com/gruppo.improledi/">facebook</a>
+                <br />
+				<br />
+				<!--
+                Link<br />
+                <a style="color: #ff8330;" target="_blank" href="http://www.salaespace.it/">Sala L'Espace</a>
+                <br />
+                <a style="color: #ff8330;" target="_blank" href="http://www.catrouge.com">Catrouge - Rossella Fava</a>
+				-->
+            </span>
+        </div>
+    </div>
+	<div id="ultimissime" class="container">
+        <div class="menu">
+            <a href="#chisiamo" title="chi siamo: gli improlediani">
+                <img src="img/chisiamo.fw.png" alt="chi siamo" /></a> <a href="#cosafacciamo" title="cosa facciamo: i nostri format">
+                    <img src="img/cosafacciamo.fw.png" alt="cosa facciamo" /></a> <a href="#appuntamenti"
+                        title="appuntamenti: i prossimi spettacoli">
+                        <img src="img/appuntamenti.fw.png" alt="appuntamenti" /></a> <a href="#photogallery"
+                            title="photogallery">
+                            <img src="img/photogallery.fw.png" alt="photogallery" /></a> <a href="#contattaci"
+                                title="contattaci">
+                                <img src="img/contattaci3.fw.png" alt="contattaci" /></a>
+								<a href="#home" 
+                                title="torna alla pagina principale">
+                                <img src="img/home6.fw.png" alt="home" /></a>
+        </div>
+
+		<div class="news">
+			<br/>
+			<span style="color: #ff8330;"><b>C'era una storia</b> stupisce il Gobetti</span><br/>
+			E' quanto scrive con nostro immenso orgoglio <b>La Nuova Periferia</b> del 2 Marzo 2016.</br>
+			<img src="img/photogallery/articolo_2_3_2016_san_mauro_small.jpg" alt="C'era una storia stupisce il gobetti" /></a></br><b><i>'Prima volta sul palco sanmaurese 
+			ed e' subito successo', 'Particolarita' dello spettacolo la capacita' di non ripetersi mai', '[...] il pubblico, dopo aver rotto il ghiaccio, 
+			ha potuto intervenire [...] creando situazioni inedite'.</i></b></br> Parole che ci lusingano 
+			e ci spronano a dare del nostro meglio, sempre.</br>Un successo oltre ogni nostra aspettativa cui si unisce la soddisfazione di aver creato una performance d'improvvisazione adatta a bambini... Di tutte le eta' e che<br/>
+			presentiamo e presenteremo con sempre maggiore energia ed entusiasmo.</br>
+			Da Improledi' a voi tutti: <b>GRAZIE</b>! 
+			</br></br></br>
+			
+			<span style="color: #ff8330;">Intangible heritage – Improvisational theater in Turin</span><br/>
+			Roberta Caleca ci regala una meravigliosa citazione nel suo
+			<a style="color: #ff8330;" target="_blank" href="http://www.gounesco.com/intangible-heritage-improvisational-theater-turin/">splendido articolo</a></br>sul sito <a style="color: #ff8330;" target="_blank" href="http://www.gounesco.com">GoUnesco</a>.</br>
+			<i><b>'A less known, but incredible creative, fun and interesting form of art is improvisational theater [Meno conosciuta ma incredibilmente creativa, divertente 
+			ed interessante forma d'arte e' l'improvvisazione teatrale]', 'Mix of regular and improvised theater [Mix di teatro recitato ed improvvisato]'.</i></b></br>Ci sentiamo assolutamente chiamati in causa e ci chiediamo se possiamo considerci... Patrimonio dell'umanita'!<br/><br/><br/>
+			
+			<span style="color: #ff8330;">13 Dicembre 2014</span><br/>
+			Quanto vale il nostro tempo?
+Cosa succede quando una persona molto impegnata e sempre pronta a pianificare progetti per il suo futuro deve forzatamente fermarsi? 
+<br/>Bisogna semplicemente considerare questa situazione come una sventura oppure puo' rivelarsi un’occasione da non perdere? 
+<br/>Di fronte a questi interrogativi si trovera' suo malgrado il protagonista di <span style="color: #ff8330;">C'era una storia</span> e per trovare le risposte dovra' mettersi in discussione seriamente. 
+<br/>In questo percorso pero' non sara' solo ma in compagnia di alcune... misteriose presenze.
+<br/>Biglietti:
+<br/>interi      euro 10,
+<br/>ridotti     euro 7,
+<br/>bambini sotto gli 11 anni             euro 1,
+<br/>ridotti disabili, pensionati, over65, studenti    euro  5.
+<br/><br/><br/>
+			
+			<span style="color: #ff8330;">29 Ottobre 2014</span><br/>
+			Improledi' in radio ! Torniamo come al solito sarcastici, irriverenti e politicamente scorretti, negli studi di Radio FLASH dalle ore 17.00: un momento di evasione e condivisione che trascorreremo piacevolmente con voi.<br/>     
+			...E non perdete l'appuntamento di domenica 26 Ottobre nella suggestiva cornice de <br/><span/>'Il Salotto di Mao'<span/> in Piazza Vittorio Emanuele a Torino !<br/><br/><br/>
+			
+			<span style="color: #ff8330;">23 Marzo 2014</span><br/>
+			Improledi' vince il PRIMO premio della giuria giovani alla Giornata Mondiale del Teatro, Volvera (TO)<br/><br/><br/>
+			
+			<span style="color: #ff8330;">Biglietti gratis per il 29 Marzo 2014: il concorso !</span><br/>
+			Che il nostro prossimo spettacolo sara' sabato 29 marzo 2014, ormai lo sapete.<br/>
+			Non sapete, pero', che alcuni improlediani hanno partecipato alle riprese di una pubblicità 'progresso' che va da poco in onda su dfferenti media (e in giro sui cartelloni).<br/>
+			Bene, ecco partito il nostro concorso, che vi premiera' con 2 biglietti per lo spettacolo dei nostri primi 10 anni: chi individuera' per primo gli 
+			improlediani nello spot sara' il vincitore o vincitrice!<br/>
+			Dovrete solo guardare la pubblicita' e scriverci chi e in quale secondo appare.<br>
+			<b>Per il premio farà fede la risposta corretta, la data e l'ora della risposta che compare nel post su <br/><a style="color: #ff8330;" target="_blank" href="https://it-it.facebook.com/gruppo.improledi/">Facebook</a>.</b><br>
+			Coraggio. Pronti, partenza e... via!<br>
+			Buona visione!<br>
+			<a style="color: #ff8330;" target="_blank" href="http://www.youtube.com/watch?v=V66NoMVqtLI/">Qui</a> lo spot che trovate anche sul sito della campagna virale
+			<a style="color: #ff8330;" target="_blank" href="http://www.sceglimeglio.com/">www.sceglimeglio.com</a>
+			
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			
+		</div>
+
+    </div>
+</body>
+</html>
